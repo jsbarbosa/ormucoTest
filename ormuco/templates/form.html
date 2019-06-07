@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="jumbotron">
+  <form method="post">
+    {% csrf_token %}
+      <div class="form-row">
+        <div class="form-group col-md-6 md-0">
+          {{ form.name | as_crispy_field }}
+        </div>
+        <div class="form-group col-md-6 md-0">
+          {{ form.favorite_color | as_crispy_field }}
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6 md-0">
+          {{ form.cats_or_dogs | as_crispy_field }}
+        </div>
+      </div>
+      <div class="form-row">
+        <input type="submit" class="btn btn-primary" value = "Send">
+      </div>
+  </form>
+</div>
+{% endblock %}

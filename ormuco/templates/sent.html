@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="jumbotron">
+    {% if success %}
+      <h1>Valid form</h1>
+      <p>The following data has been saved:</p>
+    {% else %}
+      <h1>Invalid form</h1>
+      <p>The following data could not be saved:</p>
+    {% endif %}
+    <table class="table">
+      <thead>
+        <th scope="col">Name</th>
+        <th scope="col">Favorite color</th>
+        <th scope="col">Cats or dogs</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ name }}</td>
+          <td>{{ favorite_color }}</td>
+          <td>{{ cats_or_dogs }}</td>
+        </tr>
+      </tbody>
+    </table>
+    {% if not success %}
+      <p>Name "{{ name }}" already exists</p>
+    {% endif %}
+  </div>
+
+{% endblock %}
