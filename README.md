@@ -6,10 +6,10 @@
 
 # To run:
 - `django` and `django-crispy-forms` must be installed
-- Inside the `ormuco` directory run `manage.py` by writting: `python manage.py run`
+- Inside the `ormuco` directory run `manage.py` by writting: `python manage.py runserver`
 
 ## Install
-On Python 3.7:
+In Python 3.7:
 ```
   pip install django django-crispy-forms
 ```
