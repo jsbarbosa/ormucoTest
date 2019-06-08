@@ -13,3 +13,8 @@ In Python 3.7:
 ```
   pip install django django-crispy-forms
 ```
+
+# References
+https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html
+
+https://www.guguweb.com/2017/05/02/how-to-deploy-a-django-project-in-15-minutes-with-ansible/
